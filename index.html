@@ -41,6 +41,10 @@
     .pill { display:inline-block;border:1px solid #4d6980;border-radius:999px;padding:5px 11px;font-size:12px;color:#bbe0fb;margin-bottom:9px; }
     .card h3 { font-size:26px;letter-spacing:-.025em;margin:3px 0 10px; }
     .card p { color:#afbed2;max-width:600px;margin:0; }
+    .app-links { display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:18px; }
+    .app-links a { color:#9bd6ff;font-weight:650;text-decoration:none;font-size:14px; }
+    .app-links a:hover { text-decoration:underline; }
+    .app-links a:focus-visible { outline:2px solid #7fc8ff;outline-offset:4px; }
     .info { display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px; }
     .info .card { padding:26px; }
     .info h3 { font-size:19px;margin-top:0; }
@@ -81,7 +85,10 @@
         <span class="pill">En desarrollo</span>
         <h3>TurnosYa</h3>
         <p>Una herramienta para Android enfocada en facilitar la gestión de tareas repetitivas de forma sencilla y configurable.</p>
-        <p style="margin-top:16px"><a href="/privacidad.html" style="color:#9bd6ff;font-weight:650;text-decoration:none">Política de privacidad de TurnosYa →</a></p>
+        <div class="app-links" aria-label="Privacidad y eliminación de datos de TurnosYa">
+          <a href="/privacidad.html">Política de privacidad →</a>
+          <a href="/eliminacion-datos.html">Solicitar eliminación de datos →</a>
+        </div>
       </article>
     </section>
     <section class="section" id="contacto" aria-labelledby="contacto-heading">
